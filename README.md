@@ -2,7 +2,7 @@
 
 **Version:** 1.0 — *October 2025*  
 **Author:** M. Jaweed Nazary, PhD Candidate  
-**Affiliation:** College of Engineering, University of Missouri — Columbia  
+**Affiliation:** Department of Civil and Environmental Engineering, University of Missouri — Columbia  
 **Supported by:** EPA Grant No. CD97790701  
 **Contact:** [mnxvx@umsystem.edu](mailto:mnxvx@umsystem.edu)
 
