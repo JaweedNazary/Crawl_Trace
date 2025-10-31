@@ -84,7 +84,7 @@ print(features.head())
 
 ---
 
-## 🧩 Parameter Reference
+## Parameter Reference
 
 | Parameter     | Type                | Description                                                                | Example                      |
 | ------------- | ------------------- | -------------------------------------------------------------------------- | ---------------------------- |
@@ -115,6 +115,12 @@ Each record corresponds to a traced linear feature point and includes:
 * Orientation angle (radians)
 
 *Future versions will include attributes such as flow accumulation, leveed area, and feature confidence level.*
+
+### Example of output tuned to fine levees
+<img width="609" height="643" alt="image" src="https://github.com/user-attachments/assets/44b4c992-a941-4fa2-8277-2eb24c098482" />
+
+### Example of output tuned to fine channels and channel like features
+<img width="549" height="578" alt="image" src="https://github.com/user-attachments/assets/ff444488-5640-415e-a388-3ae05af3e190" />
 
 ---
 
@@ -193,14 +199,14 @@ of this software and associated documentation files...
 
 ---
 
-## 🌎 Acknowledgments
+## Acknowledgments
 
 This work was supported by the **U.S. Environmental Protection Agency (EPA)** under Grant No. **CD97790701**.
 Special thanks to the **University of Missouri — Columbia** for technical support and collaboration.
 
 ---
 
-## 🧭 Keywords
+## Keywords
 
 `LiDAR` · `Levee Mapping` · `Channel Detection` · `Geomorphometry` · `Wetland Restoration` · `PDAL` · `Python`
 
