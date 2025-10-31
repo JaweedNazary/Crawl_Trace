@@ -1,4 +1,4 @@
-# 🛰️ Crawl_Trace: Automated Detection and Tracing of Linear Landforms Using LiDAR
+# Crawl_Trace: Automated Detection and Tracing of Linear Landforms Using LiDAR
 
 **Version:** 1.0 — *October 2025*  
 **Author:** M. Jaweed Nazary, PhD Candidate  
@@ -8,68 +8,7 @@
 
 ---
 
-## 📘 Overview
-
-**Crawl_Trace** is a Python-based tool that automatically detects, traces, and characterizes **levee-like** or **channel-like** linear landforms from **high-resolution LiDAR** data.  
-It operates on a **1000 m × 1000 m** study tile centered at a user-defined location and employs a “crawling” algorithm that follows elevation gradients either **uphill** or **downhill**, depending on the selected tracing method.
-
-This tool supports applications in:
-- Wetland restoration and reconnection studies  
-- Hydrological modeling and floodplain analysis  
-- Geomorphometric and terrain pattern mapping  
-
----
-
-## 🧠 Background
-
-Traditional detection of small levees and channels from LiDAR involves **manual inspection** or **fixed thresholding** of DEM derivatives (e.g., slope, curvature).  
-**Crawl_Trace** introduces an adaptive approach that:
-
-- Randomly seeds multiple starting points across the study tile  
-- Analyzes the **local elevation gradient** and **orientation**  
-- “Crawls” along likely ridge or depression paths  
-- Outputs **vectorized linear traces** representing probable geomorphic features  
-
-This balance of automation and interpretability makes it suitable for **landscape-scale levee mapping** and **wetland hydrologic connectivity** analysis.
-
----
-
-## 🚀 Example Usage
-
-```python
-from crawl_trace import Crawl_Trace
-
-features = Crawl_Trace(
-    location=(-10523769.57, 4719384.06),
-    N=100,
-    min_height=0.5,
-    max_height=50.0,
-    window_size=(100.0, 5.0),
-    D=20.0,
-    r=20.0,
-    resolution=1,
-    method=1,
-    random_seed=59
-)
-
-
-Absolutely 👍 — here’s a **complete, GitHub-optimized README.md** version of your Crawl_Trace documentation.
-This version includes all necessary sections: installation, usage, parameters, troubleshooting, and citation — all formatted 100% in Markdown so you can **copy and paste directly** into your GitHub repository’s `README.md`.
-
----
-
-````markdown
-# 🛰️ Crawl_Trace: Automated Detection and Tracing of Linear Landforms Using LiDAR
-
-**Version:** 1.0 — *October 2025*  
-**Author:** M. Jaweed Nazary, PhD Candidate  
-**Affiliation:** College of Engineering, University of Missouri — Columbia  
-**Supported by:** EPA Grant No. CD97790701  
-**Contact:** [mnxvx@umsystem.edu](mailto:mnxvx@umsystem.edu)
-
----
-
-## 📘 Overview
+## Overview
 
 **Crawl_Trace** is a Python-based tool that automatically detects, traces, and characterizes **levee-like** or **channel-like** linear landforms from **high-resolution LiDAR** data.  
 It operates on a **1000 m × 1000 m** study tile centered at a user-defined location and employs a “crawling” algorithm that follows elevation gradients either **uphill** or **downhill**, depending on the selected tracing method.
@@ -81,7 +20,7 @@ It operates on a **1000 m × 1000 m** study tile centered at a user-defined loca
 
 ---
 
-## 🧠 Background
+## Background
 
 Traditional methods for identifying levees and channels from LiDAR often rely on **manual interpretation** or **threshold-based filtering** of DEM derivatives (e.g., slope, curvature).  
 **Crawl_Trace** introduces an adaptive, semi-randomized crawling algorithm that:
@@ -95,7 +34,7 @@ This method balances **automation** and **interpretability**, making it suitable
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -113,13 +52,13 @@ pip install numpy geopandas matplotlib shapely rasterio pdal tqdm
 ### Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/Crawl_Trace.git
+git clone https://github.com/JaweedNazary/Crawl_Trace.git
 cd Crawl_Trace
 ```
 
 ---
 
-## 🚀 Example Usage
+## Example Usage
 
 ```python
 from crawl_trace import Crawl_Trace
@@ -162,7 +101,7 @@ print(features.head())
 
 ---
 
-## 📤 Output Description
+## Output Description
 
 **Returns:** `GeoDataFrame`
 
@@ -179,7 +118,7 @@ Each record corresponds to a traced linear feature point and includes:
 
 ---
 
-## 🧭 Recommended Workflow
+## Recommended Workflow
 
 1. **Coordinate System:** Ensure inputs are in **EPSG:3857** (units in meters).
 2. **Divide Study Area:** Split your study region into **1000 × 1000 m tiles**.
@@ -191,7 +130,7 @@ Each record corresponds to a traced linear feature point and includes:
 
 ---
 
-## 🧰 Troubleshooting
+## Troubleshooting
 
 | Error / Issue                         | Possible Cause                      | Suggested Fix                                |
 | ------------------------------------- | ----------------------------------- | -------------------------------------------- |
@@ -202,7 +141,7 @@ Each record corresponds to a traced linear feature point and includes:
 
 ---
 
-## 🧪 Example Workflow
+## Example Workflow
 
 ```python
 # Example batch processing of multiple tiles
@@ -234,7 +173,7 @@ merged.to_file("traced_features.shp")
 
 ---
 
-## 📚 Citation
+## Citation
 
 Citation details will be provided following publication of the related research paper.
 Until then, please cite as:
@@ -244,7 +183,7 @@ Until then, please cite as:
 
 ---
 
-## 🪪 License
+## License
 
 MIT License
 Copyright (c) 2025 M. Jaweed Nazary
@@ -265,5 +204,4 @@ Special thanks to the **University of Missouri — Columbia** for technical supp
 
 `LiDAR` · `Levee Mapping` · `Channel Detection` · `Geomorphometry` · `Wetland Restoration` · `PDAL` · `Python`
 
-````
 
