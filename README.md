@@ -116,11 +116,16 @@ Each record corresponds to a traced linear feature point and includes:
 
 *Future versions will include attributes such as flow accumulation, leveed area, and feature confidence level.*
 
+
 ### Example of output tuned to fine levees
+
 <img width="609" height="643" alt="image" src="https://github.com/user-attachments/assets/44b4c992-a941-4fa2-8277-2eb24c098482" />
 
+
+
 ### Example of output tuned to fine channels and channel like features
-<img width="549" height="578" alt="image" src="https://github.com/user-attachments/assets/ff444488-5640-415e-a388-3ae05af3e190" />
+
+<img width="609" height="643" alt="image" src="https://github.com/user-attachments/assets/091d6415-6e89-412c-bfd1-82fbee4e4be4" />
 
 ---
 
